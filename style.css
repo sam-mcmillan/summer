@@ -1,0 +1,739 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1; }
+
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+* html .clearfix {
+  height: 1%; }
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Starts Styling */
+
+header {
+  height: 800px;
+}
+
+.hero-overlay {
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero-logo {
+  display: block;
+  position: absolute;
+  min-width: 850px;
+  z-index: 2;
+  top: 320px;
+}
+
+#hero {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  background-color: rgba(237, 237, 237, 0.89);
+  text-align: center;
+  height: 80px;
+}
+
+.fixed-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+.logo {
+  position: relative;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #4886a5;
+}
+
+.logo:hover {
+  fill: #6cc3ee;
+}
+
+.intro {
+  display: block;
+  position: relative;
+  text-align: center;
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  color: #a3a2a1;
+  letter-spacing: .03em;
+  padding-top: 150px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #a3a2a1;
+}
+
+.container {
+  display: block;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+h2 {
+  padding-top: 40px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color: white;
+  line-height: 20px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(255, 255, 255, .65);
+  text-decoration: none;
+}
+
+p span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buttons {
+  position: absolute;
+  display: none;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left {
+  left: 19%;
+  transform: translateX(-19%);
+  padding: 0;
+  margin: 0;
+}
+
+.right-one {
+  left: 82%;
+  transform: translateX(-82%);
+}
+
+.right-two {
+  left: 80%;
+  transform: translateX(-80%);
+}
+
+
+.description-left h2, p {
+  margin: 0px 25px 10px 25px;
+  line-height: 21px;
+}
+
+.description-left {
+  width: 35%;
+  float: left;
+  cursor: pointer;
+}
+
+.description-left p span, .description-right p span {
+  padding-left: 45px;
+}
+
+.description-right h2, p {
+  margin: 0px 25px 10px 25px;
+  line-height: 21px;
+}
+
+.description-right {
+  width: 35%;
+  float: right;
+  cursor: pointer;
+}
+
+#border-one {
+  border-top: 5px solid #44aab3;
+  padding-top: 5px;
+  margin: 0px 100px 0px 100px;
+}
+
+.image-right {
+  width: 65%;
+  height: 400px;
+  float: right;
+  position: relative;
+  overflow: hidden;
+}
+
+#description-color-one {
+  background-color: #44aab3;
+  height: 400px;
+  border-right: 5px solid white;
+}
+
+#image-one {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.circle {
+  position: absolute;
+  display: inline;
+  background-color: white;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  margin-left: 25px;
+  margin-top: 8px;
+}
+
+#icon-one {
+  position: absolute;
+  display: inline-block;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 6px;
+  fill: #44aab3;
+}
+
+#border-two {
+  border-top: 5px solid #c72fbb;
+  padding-top: 5px;
+  margin: 50px 100px 0px 100px;
+}
+
+.image-left {
+  width: 65%;
+  height: 400px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+#image-two {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+
+#description-color-two {
+  background-color: #c72fbb;
+  height: 400px;
+  border-left: 5px solid white;
+}
+
+#icon-two {
+  position: absolute;
+  display: inline-block;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 6px;
+  fill: #c72fbb;
+}
+
+#border-three {
+  border-top: 5px solid #f09758;
+  padding-top: 5px;
+  margin: 50px 100px 0px 100px;
+}
+
+#image-three {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+
+#description-color-three {
+  background-color: #f09758;
+  height: 400px;
+  border-right: 5px solid white;
+}
+
+#icon-three {
+  position: absolute;
+  display: inline-block;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 6px;
+  fill: #f09758;
+}
+
+#border-four {
+  border-top: 5px solid #7f7f7e;
+  padding-top: 5px;
+  margin: 50px 100px 0px 100px;
+}
+
+#description-color-four {
+  background-color: #7f7f7e;
+  height: 400px;
+  border-left: 5px solid white;
+}
+
+#icon-four {
+  position: absolute;
+  display: inline-block;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 6px;
+  fill: #7f7f7e;
+}
+
+#image-four {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+
+#border-five {
+  border-top: 5px solid #788ff8;
+  padding-top: 5px;
+  margin: 50px 100px 0px 100px;
+}
+
+#description-color-five {
+  background-color: #788ff8;
+  height: 400px;
+  border-right: 5px solid white;
+  margin-bottom: 50px;
+}
+
+#icon-five {
+  position: absolute;
+  display: inline-block;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 6px;
+  fill: #788ff8;
+}
+
+#image-five {
+  display: block;
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+
+@media only screen
+  and (min-width: 1889px)
+  and (max-width: 4000px) {
+
+    .hero-overlay {
+      width: 980px;
+    }
+
+    #hero-logo {
+      min-width: 980px;
+      top: 300px;
+    }
+
+  .container  {
+    width: 80%;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    height: 600px;
+  }
+
+  .image-right, .image-left{
+    height: 600px;
+  }
+
+  #description-color-one, #description-color-two, #description-color-three, #description-color-four, #description-color-five {
+    height: 600px;
+  }
+
+  .description-right h2, p, .description-left h2, p {
+    margin: 0px 55px 10px 55px;
+  }
+
+  h2, p, p span {
+    font-size: 120%;
+    line-height: 130%;
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    padding-top: 58px;
+  }
+
+  h1 {
+    font-size: 80px;
+    padding-top: 132px;
+    padding-bottom: 25px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .circle {
+    margin-top: 0;
+    margin-left: 55px;
+  }
+}
+
+@media only screen
+  and (min-width: 874px)
+  and (max-width: 1280px) {
+
+    header {
+      height: 650px;
+    }
+
+    .hero-overlay {
+      width: 680px;
+    }
+
+    #hero-logo {
+      min-width: 680px;
+      top: 250px;
+    }
+  }
+
+@media only screen
+  and (min-width: 1024px)
+  and (max-width: 1082px) {
+
+
+    .intro {
+      display: block;
+      height: 200px;
+    }
+
+    .container {
+      display: block;
+    }
+
+    p span {
+      font-size: 18px;
+    }
+
+    p {
+      line-height: 19px;
+    }
+
+    #image-one, #image-two, #image-three, #image-four, #image-five {
+      height: 100%;
+    }
+
+    h1 {
+      padding-top: 46px;
+      padding-bottom: 18px;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+
+    .left {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20%;
+      transform: translateX(-20%);
+      padding: 0;
+      margin: 0;
+    }
+
+    .right-one {
+      left: 81%;
+      transform: translateX(-81%);
+    }
+
+    .right-two {
+      left: 78%;
+      transform: translateX(-78%);
+    }
+  }
+
+@media only screen
+  and (min-width: 641px)
+  and (max-width: 873px){
+
+    header {
+      height: 490px;
+    }
+
+    .hero-overlay {
+      width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #hero-logo {
+      min-width: 350px;
+      max-width: 550px;
+      top: 190px;
+    }
+  }
+
+
+  @media only screen
+    and (min-width: 641px)
+    and (max-width: 1023px) {
+
+      .container {
+        height: 500px;
+      }
+
+      .small {
+        height: 300px;
+      }
+
+      h1 {
+        font-size: 48px;
+        letter-spacing: .01em;
+        padding-top: 150px;
+        padding-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0px 65px 0px 65px;
+      }
+
+      h2 {
+        padding-top: 25px;
+      }
+
+      p {
+        line-height: 19px;
+      }
+
+      #border-one, #border-two, #border-three, #border-four, #border-five {
+        display: block;
+        width: 82%;
+        margin: 0 auto;
+      }
+
+      .image-right, .image-left {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        border-top: 5px solid white;
+        overflow: hidden;
+        bottom: 35px;
+      }
+
+      #image-one {
+        position: absolute;
+        bottom: 160px;
+      }
+
+      #image-four {
+        position: absolute;
+        top: 150px;
+      }
+
+      #description-color-one, #description-color-two, #description-color-three, #description-color-four, #description-color-five {
+        display: block;
+        position: relative;
+        height: 280px;
+        border-right: 0px;
+        border-left: 0px;
+        width: 285.5%;
+      }
+
+      .description-right, .description-left {
+        float: none;
+      }
+
+      .buttons {
+        top: 43%;
+        transform: translateY(-43%);
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+
+    @media only screen
+      and (max-width: 640px) {
+
+        header {
+          height: 350px;
+        }
+
+        .hero-overlay {
+          width: 380px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        #hero-logo {
+          min-width: 300px;
+          max-width: 385px;
+          top: 140px;
+        }
+
+        .container {
+          height: 450px;
+        }
+
+        .small, .intro {
+          height: 250px;
+        }
+
+        h1 {
+          font-size: 35px;
+          padding-top: 60px;
+        }
+
+        h3 {
+          font-size: 17px;
+          line-height: 21px;
+        }
+
+        h1, h3 {
+          margin: 0px 25px 0px 25px;
+        }
+
+        p span {
+          letter-spacing: -.01em;
+        }
+
+        .image-left, .image-right {
+          visibility: hidden;
+        }
+
+        .description-left, .description-right {
+          width: 100%;
+        }
+
+        #border-one, #border-two, #border-three, #border-four, #border-five {
+          margin: 0px 50px 0px 50px;
+        }
+
+        #description-color-one, #description-color-two, #description-color-three, #description-color-four, #description-color-five {
+          border-right: 0px;
+          border-left: 0px;
+        }
+
+        .image-right, .image-left {
+          height: 0;
+        }
+
+        .buttons {
+          top: 45%;
+          transform: translateY(-45%);
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 0;
+          margin: 0;
+        }
+
+      }
