@@ -8,31 +8,15 @@ $(window).scroll(function() {
   }
 });
 
-// Button Rollover //
+// Hover effect //
 $(".content-box").hover(function(){
-  $(this).find(".description-content, .buttons").fadeToggle();
+  if($(window).width() > 1082) {
+    $(this).find(".description-content, .buttons").fadeToggle();
+  }
 });
 
-// Linkable area //
+// Expand linkable area //
 $(".description-left, .description-right").click(function() {
   window.location = $(this).find("a").attr("href");
   return false;
 });
-
-
-$(function () {
-    addTouchEvents();
-});
-
-addTouchEvents = function() {
-    var isTouchDevice = (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
-
-    if (isTouchDevice) {
-        //replace link clicks with ontouchend events for more responsive UI
-        $("a", "[onclick]").on("touchstart",function(e) {
-            $(this).trigger("click");
-            e.preventDefault();
-            return false;
-        });
-    }
-}
